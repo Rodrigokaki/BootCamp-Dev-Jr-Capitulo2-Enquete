@@ -26,6 +26,22 @@ input{
     margin: 15px;
 }
 
+button{
+    color: #FFFBF4;
+    background-color: #1D0C20;
+    font-size: 14px;
+    width: 50%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #651F71;
+}
+
 .container{
     background-image: linear-gradient(#1D0C20, #651F71);
     width: 35%;
@@ -35,7 +51,6 @@ input{
 
 .content{
     background-image: linear-gradient(#651F71, #1D0C20);
-    height: 300px;
     border-radius: 10px;
 }
 
@@ -69,6 +84,29 @@ input{
     align-items: center;
 }
 
+.options{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card{
+    background-image: linear-gradient(#3B59EE,#73CFFF);
+    width: 140px;
+    height: 200px;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.card-border{
+    background-image: linear-gradient(#2638DD,#342987);
+    width: 140px;
+    height: 220px;
+    padding: 10px 8px;
+    margin: 20px 0px;
+    border-radius: 5px;
+}
+
 </style>
 
 <body>
@@ -87,6 +125,29 @@ input{
             <div class="display-inputs">
                 <input type="text" placeholder="Digite seu nome">
                 <input type="email" placeholder="Digite seu email">
+            </div>
+            <div class="options">
+                <div class="card-border">
+                    <div class="card">
+                        Esporte
+                        <img src="sports_soccer_white.svg" width="90%">
+                        <button>Votar</button>
+                    </div>
+                </div>
+                <div class="card-border">
+                    <div class="card">
+                        Simulação
+                        <img src="local_airport_white.svg" width="90%">
+                        <button>Votar</button>
+                    </div>
+                </div>
+                <div class="card-border">
+                    <div class="card">
+                        Estratégia
+                        <img src="psychology_white.svg" width="90%">
+                        <button>Votar</button>
+                    </div>
+                </div>
             </div>
         </div>
         <footer class="footer">@Desenvolvido por GameTechLover</footer>
